@@ -1,0 +1,38 @@
+{% extends base %}
+{% block page %}
+<style>
+    
+    .discord-button a {
+      display: inline-block;
+      background-color: #7289DA;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .discord-button a:hover {
+      background-color: #5e7fda;
+    }
+</style>
+<div class="panel panel-default">
+        <div class="category-title  category-title--with-desc ">
+            <span class="mdi mdi-view-dashboard"></span> Bedankt
+        </div>
+        <div class="panel-body">
+            <h1>Bedankt voor uw aankoop!</h1>
+            <p>Wij hebben uw betaling succesvol ontvangen.</p>
+            <p>Als je geen items ontvangt binnen 10-15 minuten, contacteer ons dan via een aankoop ticket op onze discord</p>
+            <br>
+            <p>Alle betaalinformatie is te vinden in je e-mail.</p>
+        <br>
+        <div class="discord-button">
+            <a href="https://discord.gg/astrosmp">
+                Kom bij onze Discord server!
+                kom jij ook even gezellige kijken
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

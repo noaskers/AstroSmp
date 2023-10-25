@@ -1,27 +1,69 @@
-<div class="category-title">$1000+</div>
-<div class="patrons">
-  <div class="patron">
-    <div class="patron__name">qSeek</div>
-    <div class="patron__skin">
-      <figure><img src="https://mc-heads.net/body/qSeek/left" class="fr-fic fr-dii" alt="left" width="180" height="432" data-image="limrznywdcow"></figure>
-    </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Website Maintenance</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    img {
+      max-width: 200px;
+      padding-top: 50px;
+    }
+
+    h1 {
+      color: #333333;
+      margin-top: 50px;
+    }
+
+    p {
+      color: #777777;
+      margin-top: 20px;
+    }
+
+    .discord-button {
+      margin-top: 30px;
+    }
+
+    .discord-button a {
+      display: inline-block;
+      background-color: #7289DA;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .discord-button a:hover {
+      background-color: #5e7fda;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    {% if store.logo_url %}
+    <a href="/"><img class="img-responsive pulse" height="{{ store.logoHeight }}" width="{{ store.logoWidth }}"
+        src="https://cdn.craftingstore.net/rPPmDHlLQ1/5be4257f36b2bf9aec3331b41a09514e/vdnqhyvlnfavvebizpxm.png" /></a>
+    {% else %}
+    <a href="/"><img class="img-responsive pulse" height="{{ store.logoHeight }}" width="{{ store.logoWidth }}"
+        src="https://cdn.craftingstore.net/rPPmDHlLQ1/5be4257f36b2bf9aec3331b41a09514e/vdnqhyvlnfavvebizpxm.png" /></a>
+    {% endif %}
   </div>
-  <div class="patron">
-    <div class="patron__name">qSeek</div>
-    <div class="patron__skin">
-      <figure><img src="https://mc-heads.net/body/qSeek/left" class="fr-fic fr-dii" alt="left" width="180" height="432" data-image="1db4376xnlqy"></figure>
-    </div>
+  <h1>Website Onderhoud</h1>
+  <p>We voeren momenteel onderhoudswerkzaamheden uit op onze website om uw ervaring te verbeteren.</p>
+  <p>Onze excuses voor het eventuele ongemak. Kom snel terug om te zien wat we te bieden hebben!</p>
+  <br>
+  <p>Toch iets kopen join dan onze discord hier onder en maak een ticket aan!</p>
+  <div class="discord-button">
+    <a href="https://discord.gg/astrosmp">
+      Kom bij onze Discord server!
+    </a>
   </div>
-  <div class="patron">
-    <div class="patron__name">qSeek</div>
-    <div class="patron__skin">
-      <figure><img src="https://mc-heads.net/body/qSeek/left" class="fr-fic fr-dii" alt="left" width="180" height="432" data-image="qf0ono5tjeid"></figure>
-    </div>
-  </div>
-  <div class="patron">
-    <div class="patron__name">qSeek</div>
-    <div class="patron__skin">
-      <figure><img src="https://mc-heads.net/body/qSeek/left" class="fr-fic fr-dii" alt="left" width="180" height="432" data-image="8y96k4lmz02c"></figure>
-    </div>
-  </div>
-</div>
+</body>
+
+</html>

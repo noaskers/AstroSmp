@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Motivatie voor school</title>
+</head>
+
+<body>
+    <h1>Motivatie voor school</h1>
+    <p>Vul de naam en het aantal personen in (0-10) om te zien of ze zin hebben in school:</p>
+    <label for="naam">Naam:</label>
+    <input type="text" id="naam">
+    <br>
+    <label for="aantalPersonen">Zin in school:</label>
+    <input type="number" id="aantalPersonen" min="-10" max="10">
+    <button onclick="checkMotivatie()">Controleer</button>
+    <p id="uitvoer"></p>
+
+    <script>
+        function checkMotivatie() {
+            var naam = document.getElementById("naam").value;
+            var aantalPersonen = parseInt(document.getElementById("aantalPersonen").value);
+
+            if (aantalPersonen < 0 ) {
+                document.getElementById("uitvoer").innerHTML = naam + " heeft geen zin in school.";
+            } else {
+                document.getElementById("uitvoer").innerHTML = naam + " heeft zin in school!";
+            }
+        }
+    </script>
+</body>
+
+</html>
